@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4b1824" />
+    <meta name="description" content="Sebuah ucapan ulang tahun penuh cinta untuk Dwitia Pratiwi." />
+    <title>Untuk Dwitia, Dengan Cinta</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="hero" id="beranda">
+        <canvas id="birthday-scene" aria-label="Animasi ulang tahun dengan balon, kelopak mawar, dan kue"></canvas>
+        <nav class="nav" aria-label="Navigasi utama">
+          <a class="brand" href="#beranda" aria-label="Kembali ke atas">D <span>♥</span> D</a>
+          <button class="music-button" id="music-toggle" type="button" aria-pressed="false">
+            <span class="music-icon" aria-hidden="true">♫</span>
+            <span id="music-label">Nyalakan musik</span>
+          </button>
+        </nav>
+
+        <div class="hero-content">
+          <p class="eyebrow">28 · SEPTEMBER · SELAMANYA</p>
+          <h1>Selamat Ulang Tahun,<br /><em>Dwitia!</em></h1>
+          <p class="hero-subtitle">Hari ini, semesta merayakan kamu—dan aku merayakan betapa beruntungnya hidup bersamamu.</p>
+          <button class="surprise-button" id="surprise-button" type="button">
+            <span>Buka Kejutan</span><span aria-hidden="true">✦</span>
+          </button>
+        </div>
+
+        <a class="scroll-cue" href="#pesan" aria-label="Lihat pesan untuk Dwitia">
+          <span>Gulir untuk kisah kita</span><i></i>
+        </a>
+      </header>
+
+      <main>
+        <section class="love-letter section" id="pesan">
+          <div class="section-number" aria-hidden="true">01</div>
+          <div class="letter-card reveal">
+            <span class="quote-mark" aria-hidden="true">“</span>
+            <p>Selamat ulang tahun, sayangku <strong>Dwitia Pratiwi</strong>. Terima kasih sudah menjadi teman hidup dan sumber kebahagiaanku. Semoga semua harapanmu tercapai, kesehatan dan kebahagiaan selalu menyertaimu. Aku bersyukur memiliki kamu. Aku mencintaimu, hari ini dan selamanya.</p>
+            <div class="letter-signature"><span></span> Untukmu, selalu</div>
+          </div>
+        </section>
+
+        <section class="memories section" id="kenangan">
+          <div class="section-heading reveal">
+            <p class="eyebrow">CERITA KECIL KITA</p>
+            <h2>Kenangan yang selalu<br /><em>ingin kuulang</em></h2>
+            <p class="section-copy">Tempat untuk menyimpan momen-momen favorit kita. Ganti gambar placeholder ini dengan foto kenangan kalian.</p>
+          </div>
+          <div class="gallery">
+            <figure class="memory-card memory-card--tall reveal">
+              <img src="/images/memory-1.svg" alt="Placeholder foto kenangan pertama" />
+              <figcaption><span>01</span> Cerita kita dimulai</figcaption>
+            </figure>
+            <figure class="memory-card reveal">
+              <img src="/images/memory-2.svg" alt="Placeholder foto kenangan kedua" />
+              <figcaption><span>02</span> Tawa favoritku</figcaption>
+            </figure>
+            <figure class="memory-card reveal">
+              <img src="/images/memory-3.svg" alt="Placeholder foto kenangan ketiga" />
+              <figcaption><span>03</span> Menua bersamamu</figcaption>
+            </figure>
+          </div>
+          <aside class="photo-note reveal">
+            <span aria-hidden="true">✦</span>
+            <p><strong>Cara mengganti foto:</strong> simpan foto kalian di folder <code>public/images</code>, lalu ubah nama file pada atribut <code>src</code> di <code>index.html</code>.</p>
+          </aside>
+        </section>
+
+        <section class="wish section" id="harapan">
+          <div class="wish-orbit" aria-hidden="true"><span>♥</span></div>
+          <div class="wish-content reveal">
+            <p class="eyebrow">SATU HARAPAN</p>
+            <h2>Semoga setiap langkahmu<br />selalu ditemani <em>bahagia.</em></h2>
+            <p>Dan semoga aku selalu ada di sampingmu, untuk merayakan setiap mimpi yang menjadi nyata.</p>
+            <button class="surprise-button surprise-button--light" id="surprise-button-bottom" type="button"><span>Buka Kejutan</span><span aria-hidden="true">✦</span></button>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>Dengan cinta,</p>
+        <h2>suamimu <span>❤️</span></h2>
+        <p class="footer-date">28 · 09 · SELAMANYA</p>
+      </footer>
+
+      <div class="surprise-modal" id="surprise-modal" role="dialog" aria-modal="true" aria-labelledby="surprise-title" hidden>
+        <div class="modal-backdrop"></div>
+        <div class="modal-card">
+          <button class="modal-close" id="modal-close" type="button" aria-label="Tutup kejutan">×</button>
+          <div class="modal-sparkle" aria-hidden="true">✦</div>
+          <p class="eyebrow">UNTUK PEREMPUAN FAVORITKU</p>
+          <h2 id="surprise-title">Kamu adalah rumah<br />yang selalu kupilih.</h2>
+          <p>Terima kasih sudah hadir dan membuat hari-hari biasa terasa istimewa. Selamat bertambah usia, cintaku. Mari menulis lebih banyak cerita bersama.</p>
+          <div class="modal-heart" aria-hidden="true">♥</div>
+        </div>
+      </div>
+      <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
